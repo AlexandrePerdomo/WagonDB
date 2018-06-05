@@ -130,7 +130,17 @@ class PagesController < ActionController::Base
     builder = Nokogiri::XML::Builder.new(:encoding => 'utf-8') do |xml|
       xml.sql {
         models.each_with_index do |model, i|
-          xml.table('x' => "100", 'y' => 100*i, 'name' => model[:table_name]){
+          y = (i+1)/4*100
+          if (i+1)%4 == 0
+            x = 950
+          elsif (i+1)%3 == 0
+            x = 650
+          elsif (i+1)%2 == 0
+            x = 350
+          elsif (i+1)%1 == 0
+            x = 50
+          end
+          xml.table('x' => x, 'y' => y, 'name' => model[:table_name]){
             xml.row('name' => "id", 'null' => "1", 'autoincrement' => "1"){
               xml.datatype "INTEGER"
               xml.default "NULL"
