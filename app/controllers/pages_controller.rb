@@ -1,4 +1,4 @@
-class PagesController < ActionController::Base
+class PagesController < ApplicationController
   require 'nokogiri'
 
   def home
