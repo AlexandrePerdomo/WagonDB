@@ -1,7 +1,7 @@
 <p>Welcome to your DB convertor</p>
 <div class="container" style="height: 765px;">
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
       <div class="field1">
         <form action="/xml" method="post">
           <textarea rows="7" cols="50" name="xml" placeholder="XML file to convert to rails models"></textarea>
@@ -9,6 +9,8 @@
           <input type="submit">
         </form>
       </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
       <div class="field2">
         <form action="/schema" method="post">
           <textarea rows="7" cols="50" name="schema" placeholder="Convert rails schema to XML"></textarea>
