@@ -8,13 +8,12 @@ gem 'rails', '~> 6.1'
 gem 'redis'
 gem 'faker'
 gem 'bootstrap-sass', '~> 3.3'
-gem 'font-awesome-sass', '~> 5.0.9'
-gem 'sass-rails'
+gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'sprockets-rails', :require =>'sprockets/railtie'
-
+gem "nokogiri", ">= 1.12.5"
 
 group :development, :test do
   gem 'pry-byebug'

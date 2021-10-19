@@ -76,8 +76,6 @@ GEM
     faker (2.19.0)
       i18n (>= 1.6, < 2)
     ffi (1.15.4)
-    font-awesome-sass (5.0.13)
-      sassc (>= 1.11)
     globalid (0.5.2)
       activesupport (>= 5.0)
     i18n (1.8.10)
@@ -147,8 +145,6 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     redis (4.5.1)
-    sass-rails (6.0.0)
-      sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -199,16 +195,16 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3)
   faker
-  font-awesome-sass (~> 5.0.9)
   jbuilder
   listen
+  nokogiri (>= 1.12.5)
   pg
   pry-byebug
   pry-rails
   puma
   rails (~> 6.1)
   redis
-  sass-rails
+  sassc-rails
   simple_form
   spring
   spring-watcher-listen
