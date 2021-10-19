@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
-ruby '2.4.3'
+ruby '3.0.0'
 
 gem 'jbuilder'
 gem "pg"
 gem 'puma'
-gem 'rails', '5.1.5'
+gem 'rails', '~> 6.1'
 gem 'redis'
 gem 'faker'
 gem 'bootstrap-sass', '~> 3.3'
