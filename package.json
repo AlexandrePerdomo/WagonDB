@@ -2,7 +2,7 @@
   "name": "WagonDB",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "5.4.3",
+    "@rails/webpacker": "^5.4.3",
     "ansi-regex": ">=5.0.1",
     "bootstrap": "3",
     "nth-check": ">=2.0.1",
