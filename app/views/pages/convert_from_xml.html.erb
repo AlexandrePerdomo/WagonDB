@@ -1,7 +1,17 @@
-<%= link_to "Accueil", root_path %>
-<br>
-<br>
-<% @phrases.each do |phrase| %>
-  <p><%= phrase %></p>
-  <br>
-<% end %>
+<h2>Use those sentences to generate your models</h2>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="convert_from_xml">
+        <% if @phrases.empty? %>
+        <p>No sentences for your XML file</p>
+      <% else %>
+        <% @phrases.each do |phrase| %>
+          <p><%= phrase %></p>
+          <br>
+        <% end %>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
