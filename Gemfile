@@ -19,9 +19,15 @@ gem 'webpacker'
 
 group :development, :test do
   gem 'listen'
+  gem 'mocha'
   gem 'pry-byebug'
   gem 'pry-rails'
+  gem 'shoulda', '~> 3.5'
+  gem 'shoulda-matchers', '~> 3.1.3'
   gem 'spring'
   gem 'spring-watcher-listen'
+end
+
+group :development do
   gem 'web-console'
 end
