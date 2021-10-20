@@ -1,5 +1,10 @@
-<%= link_to "Accueil", root_path %>
-<br>
-<br>
-
-<textarea rows="10" cols="50" name="schema" placeholder="Convert rails schema to XML"><%= @builder %></textarea>
+<h2>Use this XML to visualize yours models on <a target="_blank" href="https://kitt.lewagon.com/db/">Kitt</a></h2>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="convert_from_schema">
+        <textarea rows="27" cols="50" name="schema" placeholder="Convert rails schema to XML"><%= @builder %></textarea>
+      </div>
+    </div>
+  </div>
+</div>

@@ -94,6 +94,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.14.4)
+    mocha (1.13.0)
     nio4r (2.5.8)
     nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
@@ -108,7 +109,7 @@ GEM
       pry (>= 0.10.4)
     puma (5.5.2)
       nio4r (~> 2.0)
-    racc (1.5.2)
+    racc (1.6.0)
     rack (2.2.3)
     rack-proxy (0.7.0)
       rack
@@ -154,6 +155,12 @@ GEM
       sprockets-rails
       tilt
     semantic_range (3.0.0)
+    shoulda (3.6.0)
+      shoulda-context (~> 1.0, >= 1.0.1)
+      shoulda-matchers (~> 3.0)
+    shoulda-context (1.2.2)
+    shoulda-matchers (3.1.3)
+      activesupport (>= 4.0.0)
     simple_form (5.1.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
@@ -197,6 +204,7 @@ DEPENDENCIES
   faker
   jbuilder
   listen
+  mocha
   nokogiri (>= 1.12.5)
   pg
   pry-byebug
@@ -205,6 +213,8 @@ DEPENDENCIES
   rails (~> 6.1)
   redis
   sassc-rails
+  shoulda (~> 3.5)
+  shoulda-matchers (~> 3.1.3)
   simple_form
   spring
   spring-watcher-listen
