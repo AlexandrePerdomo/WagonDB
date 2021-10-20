@@ -6,7 +6,7 @@ default: &default
   public_root_path: public
   public_output_path: packs
   cache_path: tmp/cache/webpacker
-  webpack_compile_output: true
+  webpack_compile_output: false
 
   # Additional paths webpack should lookup modules
   # ['app/assets', 'engine/foo/app/assets']
@@ -83,10 +83,10 @@ production:
   <<: *default
 
   # Production depends on precompilation of packs prior to booting for performance.
-  compile: true
+  compile: false
 
   # Extract and emit a css file
-  extract_css: true
+  extract_css: false
 
   # Cache manifest.json for performance
   cache_manifest: true
